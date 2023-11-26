@@ -1,0 +1,29 @@
+version: '3'
+services:
+  microservice-1:
+    image: microservice1image:v1.0
+    deploy:
+      replicas: 5
+    ports:
+      - 3000:3000
+
+  microservice-2:
+    image: microservice2image:v1.0
+    deploy:
+      replicas: 3
+    ports:
+      - 3001:3001
+  
+  microservice-3:
+    image: microservice3image:v1.0
+    deploy:
+      replicas: 3
+    ports:
+      - 3002:3002
+  
+  microservice-4:
+    image: microservice4image:v1.0
+    deploy:
+      replicas: 4
+    ports:
+      - 3003:3003
